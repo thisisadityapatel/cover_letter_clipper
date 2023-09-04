@@ -131,7 +131,7 @@ def create_new_doc(drive_services, new_filename):
 
     except HttpError as error:
         # TODO(developer) - Handle errors from drive API.
-        logger.exception(f'❌ Failed to generate new document copy in Google Drive')
+        logger.exception(f'Failed to generate new document copy in Google Drive')
         logger.error(error)
         return None
 
@@ -155,7 +155,7 @@ def stream_pdf_file(drive_services, doc_id, company_name, file_type="PDF"):
             downloaded_file.seek(0)
             output_file.write(downloaded_file.read())
     except Exception as e:
-        logger.exception("❌ Filed to download the file")
+        logger.exception("Filed to download the file")
         logger.error(e)
         
 
@@ -200,7 +200,7 @@ def main():
     try:
         drive_services.files().delete(fileId=cv_file_copy['id']).execute()
     except Exception as e:
-        logger.exception("❌ Failed to delete the Google Document")
+        logger.exception("Failed to delete the Google Document")
         logger.error(e)
         exit(1)
     logger.info("✅ CV Downloaded in your DOWNLOADS folder")
