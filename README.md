@@ -23,13 +23,13 @@ To get started with the Cover Letter Clipper, follow these steps:
    ```
 4. Activate the virtual environment:
 
-  ```shell
-  source env/bin/activate
-  ```
+   ```shell
+   source env/bin/activate
+   ```
 5. Install the required dependencies using pip:
 
-  ```shell
-  pip3 install -r requirements.txt
-  ```
+   ```shell
+   pip3 install -r requirements.txt
+   ```
    
 
