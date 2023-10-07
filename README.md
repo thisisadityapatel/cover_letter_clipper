@@ -30,3 +30,8 @@ source env/bin/activate
 ```shell
 pip3 install -r requirements.txt
 ```
+
+6. Exit the virtual environment using:
+```shell
+deactivate
+```
