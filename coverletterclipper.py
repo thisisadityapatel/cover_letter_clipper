@@ -19,6 +19,7 @@ from pathlib import Path
 SCOPES = ['https://www.googleapis.com/auth/documents',
           'https://www.googleapis.com/auth/drive']
 
+# Dont worry, I'm not leaking anything, these arent secrets, just the folder ID's
 # The ID of the template google document.
 TEMPLATE_DOCUMENT_ID = '1LjXMKG4M9j_uA-uCdvqdxVYs6Un0zIb0VPxKq2LQ9I0'
 # The ID of the template google drive folder.
